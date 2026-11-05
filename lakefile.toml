@@ -1,0 +1,14 @@
+name = "StrataDyn"
+version = "0.1.0"
+defaultTargets = ["StrataDyn"]
+
+[leanOptions]
+warningAsError = true
+
+[[require]]
+name = "StrataDDM"
+git = "https://github.com/strata-org/Strata-DDM"
+rev = "main"
+
+[[lean_lib]]
+name = "StrataDyn"
