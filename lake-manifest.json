@@ -1,0 +1,16 @@
+{"version": "1.2.0",
+ "packagesDir": ".lake/packages",
+ "packages":
+ [{"url": "https://github.com/strata-org/Strata-DDM",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "6ca7dbdf5738571a0f6e7cd7d6bc917206797549",
+   "name": "StrataDDM",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": "main",
+   "inherited": false,
+   "configFile": "lakefile.toml"}],
+ "name": "StrataDyn",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}

@@ -1,0 +1,35 @@
+name: Build
+
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches: [main]
+
+jobs:
+  build_lean:
+    name: Build Lean
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Build StrataDyn
+        uses: leanprover/lean-action@v1
+        with:
+          build-args: StrataDyn
+          test: false
+          use-github-cache: true
+
+  lint_checks:
+    name: Run lint checks
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - uses: strata-org/Strata/.github/actions/check-copyright-headers@main
+      - uses: strata-org/Strata/.github/actions/lint-whitespace@main
+        with:
+          directory: .
+      - uses: strata-org/Strata/.github/actions/check-lean-import@main
