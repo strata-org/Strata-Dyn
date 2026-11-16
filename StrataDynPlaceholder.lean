@@ -5,4 +5,5 @@
 -/
 module
 
+public import Strata
 public import StrataDDM
