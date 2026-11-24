@@ -1,14 +1,14 @@
 name = "StrataDyn"
 version = "0.1.0"
-defaultTargets = ["StrataDyn"]
+defaultTargets = ["StrataDynPlaceholder"]
 
 [leanOptions]
 warningAsError = true
 
 [[require]]
-name = "StrataDDM"
-git = "https://github.com/strata-org/Strata-DDM"
+name = "Strata"
+git = "https://github.com/strata-org/Strata.git"
 rev = "main"
 
 [[lean_lib]]
-name = "StrataDyn"
+name = "StrataDynPlaceholder"

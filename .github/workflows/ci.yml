@@ -16,7 +16,6 @@ jobs:
       - name: Build StrataDyn
         uses: leanprover/lean-action@v1
         with:
-          build-args: StrataDyn
           test: false
           use-github-cache: true
 

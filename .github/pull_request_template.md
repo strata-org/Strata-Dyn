@@ -4,6 +4,6 @@
 
 ### Checklist
 
-- [ ] `lake build StrataDyn` succeeds locally
+- [ ] `lake build` succeeds locally
 - [ ] New `.lean` files start with the standard copyright header
 - [ ] No trailing whitespace and files end with a newline
